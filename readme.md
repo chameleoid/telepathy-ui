@@ -1,11 +1,19 @@
+[![Deps][]][gemnasium]
+
 # Telepathy UI
 The interface that will be used by [Telepathy Web][], [Telepathy Desktop][], and [Telepathy Mobile][].  Currently under early development.
+
+
+This project was generated with [Angular CLI][] version 1.7.2.
+
+[Deps]: https://img.shields.io/gemnasium/chameleoid/telepathy-ui.svg "Dependency Status"
+[gemnasium]: https://gemnasium.com/chameleoid/telepathy-ui
 
 [Telepathy Web]: https://github.com/chameleoid/telepathy-web
 [Telepathy Desktop]: https://github.com/chameleoid/telepathy-desktop
 [Telepathy Mobile]: https://github.com/chameleoid/telepathy-mobile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+[Angular CLI]: https://github.com/angular/angular-cli
 
 
 ## Development server
