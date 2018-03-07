@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
+import { IdentityManagerComponent } from './identity-manager/identity-manager.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PasswordGeneratorComponent,
+    IdentityManagerComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
