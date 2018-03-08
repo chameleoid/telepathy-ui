@@ -1,1 +1,32 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item href="https://fosstodon.org/@chameleoid">
+        <mat-icon matListIcon fontSet="fa" fontIcon="fa-mastodon"></mat-icon>
+        News &amp; Updates
+      </a>
+
+      <a mat-list-item href="https://github.com/chameleoid/telepathy">
+        <mat-icon matListIcon fontSet="fa" fontIcon="fa-github"></mat-icon>
+        Source Code
+      </a>
+
+      <a mat-list-item href="https://liberapay.com/chameleoid">
+        <mat-icon matListIcon fontSet="fa" fontIcon="fa-liberapay"></mat-icon>
+        Support Development
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
