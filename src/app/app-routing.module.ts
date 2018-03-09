@@ -5,7 +5,8 @@ import { IdentityManagerComponent } from './identity-manager/identity-manager.co
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: '', component: PasswordGeneratorComponent },
+  { path: '', redirectTo: '/generate', pathMatch: 'full' },
+  { path: 'generate', component: PasswordGeneratorComponent },
   { path: 'identity', component: IdentityManagerComponent },
   { path: 'about', component: AboutComponent },
 ];
