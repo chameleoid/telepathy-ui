@@ -1,17 +1,24 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <mat-nav-list>
+    <mat-nav-list (click)="sidenav.close()">
       <a mat-list-item routerLink="/generate">
         <mat-icon matListIcon>vpn_key</mat-icon>
         Passwords
       </a>
 
       <a mat-list-item routerLink="/identity">
-        <mat-icon matListIcon>perm_identity</mat-icon>
+        <mat-icon matListIcon>face</mat-icon>
         Identity
       </a>
 
+      <a mat-list-item routerLink="/about">
+        <mat-icon matListIcon>info</mat-icon>
+        About
+      </a>
+
       <mat-divider></mat-divider>
+
+      <h3 matSubheader>Resources</h3>
 
       <a mat-list-item target="_blank" href="https://fosstodon.org/@chameleoid">
         <mat-icon matListIcon fontSet="fa" fontIcon="fa-mastodon"></mat-icon>
