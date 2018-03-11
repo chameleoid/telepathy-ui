@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$telepathy-primary: mat-palette($mat-pink);
+$telepathy-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$telepathy-warn: mat-palette($mat-red);
+
+$telepathy-theme: mat-dark-theme($telepathy-primary, $telepathy-accent, $telepathy-warn);
+
+@include angular-material-theme($telepathy-theme);
