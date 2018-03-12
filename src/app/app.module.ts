@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 import { AppComponent } from './app.component';
@@ -40,6 +42,8 @@ import { AboutComponent } from './about/about.component';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSliderModule,
+    MatButtonToggleModule,
 
     AppRoutingModule
   ],
