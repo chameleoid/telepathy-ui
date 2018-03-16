@@ -8,4 +8,26 @@ mat-sidenav-container {
 
 mat-sidenav {
   width: 300px;
+  background: linear-gradient(#37479F, #347396);
+}
+
+mat-toolbar {
+  background-color: rgba(0,0,0,0);
+}
+
+mat-sidenav-container {
+  background: linear-gradient(#3F51B5, #20729F)
+}
+
+.logo {
+padding-top: 16px;
+padding-left: 16px;
+}
+
+.uesrname {
+padding-left: 16px;
+}
+
+.resources {
+color: rgba(255, 255, 255, .7);
 }

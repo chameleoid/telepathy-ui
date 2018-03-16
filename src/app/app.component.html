@@ -1,31 +1,52 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <mat-nav-list>
+    <button style="padding-left: 24px; padding-top: 12px;" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+		<br>
+
+		<img src="assets/launcher-icon.png" class="logo">
+
+<mat-list class="username">
+		<mat-list-item> Default username</mat-list-item>
+</mat-list>
+
+
+    <mat-nav-list (click)="sidenav.close()">
       <a mat-list-item routerLink="/generate">
         <mat-icon matListIcon>vpn_key</mat-icon>
         Passwords
       </a>
 
       <a mat-list-item routerLink="/identity">
-        <mat-icon matListIcon>perm_identity</mat-icon>
+        <mat-icon matListIcon>face</mat-icon>
         Identity
       </a>
 
+      <a mat-list-item routerLink="/about">
+        <mat-icon matListIcon>info</mat-icon>
+        About
+      </a>
+    </mat-nav-list>
+
       <mat-divider></mat-divider>
 
-      <a mat-list-item target="_blank" href="https://fosstodon.org/@chameleoid">
+    <mat-nav-list (click)="sidenav.close()">
+      <h3 matSubheader class="resources">Resources</h3>
+
+      <a mat-list-item target="_blank" href="https://fosstodon.org/@chameleoid" class="resources">
         <mat-icon matListIcon fontSet="fa" fontIcon="fa-mastodon"></mat-icon>
-        News &amp; Updates
+        Updates
       </a>
 
-      <a mat-list-item target="_blank" href="https://github.com/chameleoid/telepathy">
+      <a mat-list-item target="_blank" href="https://github.com/chameleoid/telepathy" class="resources">
         <mat-icon matListIcon fontSet="fa" fontIcon="fa-github"></mat-icon>
         Source Code
       </a>
 
-      <a mat-list-item target="_blank" href="https://liberapay.com/chameleoid">
+      <a mat-list-item target="_blank" href="https://liberapay.com/chameleoid" class="resources">
         <mat-icon matListIcon fontSet="fa" fontIcon="fa-liberapay"></mat-icon>
-        Support Development
+        Donate
       </a>
     </mat-nav-list>
   </mat-sidenav>
@@ -36,9 +57,11 @@
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
+<span>Title</span>
       </mat-toolbar-row>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
