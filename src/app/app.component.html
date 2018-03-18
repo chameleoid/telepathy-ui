@@ -3,14 +3,13 @@
     <button style="padding-left: 24px; padding-top: 12px;" mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-		<br>
+    <br>
 
-		<img src="assets/launcher-icon.png" class="logo">
+    <img src="assets/launcher-icon.png" class="logo">
 
-<mat-list class="username">
-		<mat-list-item> Default username</mat-list-item>
-</mat-list>
-
+    <mat-list class="username">
+      <mat-list-item> Default username</mat-list-item>
+    </mat-list>
 
     <mat-nav-list (click)="sidenav.close()">
       <a mat-list-item routerLink="/generate">
@@ -29,7 +28,7 @@
       </a>
     </mat-nav-list>
 
-      <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
 
     <mat-nav-list (click)="sidenav.close()">
       <h3 matSubheader class="resources">Resources</h3>
@@ -47,6 +46,11 @@
       <a mat-list-item target="_blank" href="https://liberapay.com/chameleoid" class="resources">
         <mat-icon matListIcon fontSet="fa" fontIcon="fa-liberapay"></mat-icon>
         Donate
+      </a>
+
+      <a mat-list-item target="_blank" href="https://chameleoid.com/privacy" class="resources">
+        <mat-icon matListIcon>lock_outline</mat-icon>
+        Privacy
       </a>
     </mat-nav-list>
   </mat-sidenav>

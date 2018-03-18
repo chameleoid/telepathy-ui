@@ -44,7 +44,7 @@ import { AboutComponent } from './about/about.component';
     MatInputModule,
     MatSliderModule,
     MatButtonToggleModule,
-		MatSlideToggleModule,
+    MatSlideToggleModule,
 
     AppRoutingModule
   ],
