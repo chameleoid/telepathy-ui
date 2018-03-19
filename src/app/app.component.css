@@ -20,14 +20,14 @@ mat-sidenav-container {
 }
 
 .logo {
-padding-top: 16px;
-padding-left: 16px;
+  margin: 0 auto 1em;
+  display: inline-block;
 }
 
-.uesrname {
-padding-left: 16px;
+.username {
+  margin: 0;
 }
 
-.resources {
-color: rgba(255, 255, 255, .7);
+.resources a, .resources h3 {
+  color: rgba(255, 255, 255, .7);
 }
