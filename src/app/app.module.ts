@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,7 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     BrowserModule,
 
+    MatTooltipModule,
     MatSidenavModule,
     MatTabsModule,
     MatToolbarModule,
