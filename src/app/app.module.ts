@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -15,6 +16,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +34,7 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    FlexLayoutModule
 
     MatTooltipModule,
     MatSidenavModule,
@@ -46,6 +49,7 @@ import { AboutComponent } from './about/about.component';
     MatSliderModule,
     MatButtonToggleModule,
     MatSlideToggleModule,
+    MatSelectModule,
 
     AppRoutingModule
   ],
