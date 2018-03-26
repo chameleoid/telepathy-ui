@@ -113,3 +113,7 @@ $telepathy-accent:  mat-palette($telepathy-white);
 $telepathy-theme: mat-dark-theme($telepathy-primary, $telepathy-accent);
 
 @include angular-material-theme($telepathy-theme);
+
+[fxlayout] > label {
+  white-space: nowrap;
+}
