@@ -34,7 +34,7 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    FlexLayoutModule
+    FlexLayoutModule,
 
     MatTooltipModule,
     MatSidenavModule,
