@@ -1,3 +1,64 @@
-<p>
-  identity-manager works!
-</p>
+<form>
+  <mat-expansion-panel expanded="true" hideToggle="true">
+    <mat-form-field>
+      <input matInput placeholder="Default Username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Generation Seed">
+    </mat-form-field>
+
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="start center" class="flexText">
+      <mat-label>Default Password Length</mat-label>
+
+      <span fxFlex></span>
+      <mat-slider thumbLabel id="defaultPasswordLength" min="1" max="128" step="1" value="10"></mat-slider>
+    </div>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Advanced
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="start center" class="flexText">
+      <mat-label>Save Generation Seed?</mat-label>
+
+      <span fxFlex></span>
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="start center" class="flexText">
+      <mat-label>Default Legacy Password Generation</mat-label>
+
+      <span fxFlex></span>
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="start center" class="flexText">
+      <mat-label matTooltip="This will change the password that is generated for all passwords.">Password Index</mat-label>
+
+      <mat-slider thumbLabel min="0" max="100" step="1"></mat-slider>
+    </div>
+
+
+    <mat-form-field>
+      <mat-select placeholder="Algorithm" value="SHA256">
+        <mat-option value="SHA224">SHA-224</mat-option>
+        <mat-option value="SHA256">SHA-256</mat-option>
+        <mat-option value="SHA384">SHA-384</mat-option>
+        <mat-option value="SHA512">SHA-512</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </mat-expansion-panel>
+
+</form>
+
+  <button mat-fab>
+    <mat-icon arial-label="Done with Identity">done</mat-icon>
+  </button>
+
