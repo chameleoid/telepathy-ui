@@ -19,6 +19,11 @@ mat-sidenav-container {
   background: linear-gradient(#3F51B5, #20729F)
 }
 
+.resources {
+  position: fixed;
+  bottom: 10px;
+}
+
 .logo {
   margin: 0 auto 1em;
   display: inline-block;
